@@ -1,0 +1,33 @@
+# .NET / Visual Studio derleme çıktıları
+bin/
+obj/
+*.user
+*.suo
+
+# Visual Studio klasörleri
+.vs/
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Yayın (publish) çıktıları
+publish/
+*.pubxml
+*.pubxml.user
+
+# NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# Test sonuçları
+TestResults/
+*.trx
+
+# Kullanıcı dosyaları (settings.json geliştirme sırasında oluşabilir)
+*.log
+
+# Windows dosya sistemi
+Thumbs.db
+Desktop.ini
