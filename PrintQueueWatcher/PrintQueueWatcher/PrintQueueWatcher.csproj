@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+    <AssemblyName>PrintQueueWatcher</AssemblyName>
+    <RootNamespace>PrintQueueWatcher</RootNamespace>
+    <Version>1.1.0</Version>
+    <Authors>PrintQueueWatcher Contributors</Authors>
+    <Product>PrintQueueWatcher</Product>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Tek instance kontrolü ve genel kararlılık için -->
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+
+    <!-- Windows'a özgü Print API (System.Printing) için gereklidir -->
+    <UseWindowsForms>false</UseWindowsForms>
+
+    <!--
+        Aşağıdaki ayarlar yalnızca "dotnet publish" sırasında devreye girer
+        (normal derleme/hata ayıklama - F5 - davranışını etkilemez):
+        - RuntimeIdentifier: Windows 64-bit hedefler.
+        - SelfContained: .NET çalışma zamanını exe'nin içine gömer; kullanıcının
+          ayrıca ".NET Runtime" indirip kurmasına gerek kalmaz.
+        - PublishSingleFile: her şeyi TEK bir .exe dosyasında paketler.
+        - IncludeNativeLibrariesForSelfExtract: yerel (native) bağımlılıkları da
+          tek dosyaya gömer.
+        - PublishReadyToRun: başlangıç süresini kısaltmak için ön-derleme yapar.
+    -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Sistem tepsisi (system tray) simgesi desteği için -->
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\app.ico" />
+  </ItemGroup>
+
+</Project>

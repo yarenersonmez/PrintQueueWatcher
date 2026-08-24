@@ -1,0 +1,78 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Main Window -->
+    <system:String x:Key="Str_AppTitle" xmlns:system="clr-namespace:System;assembly=mscorlib">PrintQueueWatcher</system:String>
+    <system:String x:Key="Str_SelectedPrinterLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Selected Printer:</system:String>
+    <system:String x:Key="Str_NoPrinterSelected" xmlns:system="clr-namespace:System;assembly=mscorlib">No printer selected yet</system:String>
+    <system:String x:Key="Str_StartButton" xmlns:system="clr-namespace:System;assembly=mscorlib">Start</system:String>
+    <system:String x:Key="Str_StopButton" xmlns:system="clr-namespace:System;assembly=mscorlib">Stop</system:String>
+    <system:String x:Key="Str_TrayHint" xmlns:system="clr-namespace:System;assembly=mscorlib">To exit, right-click the tray icon</system:String>
+    <system:String x:Key="Str_MinimizeToTrayHint" xmlns:system="clr-namespace:System;assembly=mscorlib">When you close this window, the app keeps running in the system tray.</system:String>
+    <system:String x:Key="Str_StartWithWindows" xmlns:system="clr-namespace:System;assembly=mscorlib">Start with Windows</system:String>
+    <system:String x:Key="Str_SettingsButton" xmlns:system="clr-namespace:System;assembly=mscorlib">Settings</system:String>
+    <system:String x:Key="Str_StatusIdle" xmlns:system="clr-namespace:System;assembly=mscorlib">Status: Idle</system:String>
+    <system:String x:Key="Str_StatusMonitoring" xmlns:system="clr-namespace:System;assembly=mscorlib">Status: Monitoring</system:String>
+    <system:String x:Key="Str_StatusPrinting" xmlns:system="clr-namespace:System;assembly=mscorlib">Status: Printing ({0} job(s))</system:String>
+    <system:String x:Key="Str_StatusQueueEmpty" xmlns:system="clr-namespace:System;assembly=mscorlib">Status: Queue empty ({0}/{1} s)</system:String>
+    <system:String x:Key="Str_StatusError" xmlns:system="clr-namespace:System;assembly=mscorlib">Status: Unable to read queue</system:String>
+    <system:String x:Key="Str_SelectPrinterFirst" xmlns:system="clr-namespace:System;assembly=mscorlib">Select a printer from Settings before continuing.</system:String>
+
+    <!-- Settings Window -->
+    <system:String x:Key="Str_SettingsTitle" xmlns:system="clr-namespace:System;assembly=mscorlib">Settings</system:String>
+    <system:String x:Key="Str_PrinterSection" xmlns:system="clr-namespace:System;assembly=mscorlib">Printer</system:String>
+    <system:String x:Key="Str_PrinterSelectLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Printer to monitor:</system:String>
+    <system:String x:Key="Str_RefreshPrinters" xmlns:system="clr-namespace:System;assembly=mscorlib">Refresh List</system:String>
+
+    <system:String x:Key="Str_TimingSection" xmlns:system="clr-namespace:System;assembly=mscorlib">Timing</system:String>
+    <system:String x:Key="Str_WaitSecondsLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Wait before alert: {0} seconds</system:String>
+    <system:String x:Key="Str_WaitSecondsHint" xmlns:system="clr-namespace:System;assembly=mscorlib">Short durations may flag consecutively sent jobs as "finished" too early and trigger unnecessary alerts; setting it too low also makes the system check more often than needed. 20-40 seconds is recommended depending on your printer's speed.</system:String>
+    <system:String x:Key="Str_CheckIntervalLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Queue check frequency: every {0} second(s)</system:String>
+    <system:String x:Key="Str_CheckIntervalHint" xmlns:system="clr-namespace:System;assembly=mscorlib">How often the app looks at the print queue. A lower value (1-2 s) reacts faster but keeps the computer very slightly busier; on older or lower-spec computers, raising this to 5 seconds or more can ease the load.</system:String>
+
+    <system:String x:Key="Str_NotificationSection" xmlns:system="clr-namespace:System;assembly=mscorlib">Notification Sound</system:String>
+    <system:String x:Key="Str_SoundNone" xmlns:system="clr-namespace:System;assembly=mscorlib">Silent</system:String>
+    <system:String x:Key="Str_SoundSingleBeep" xmlns:system="clr-namespace:System;assembly=mscorlib">Single Beep</system:String>
+    <system:String x:Key="Str_SoundDoubleBeep" xmlns:system="clr-namespace:System;assembly=mscorlib">Double Beep</system:String>
+    <system:String x:Key="Str_SoundTripleBeep" xmlns:system="clr-namespace:System;assembly=mscorlib">Triple Beep</system:String>
+    <system:String x:Key="Str_SoundLowTone" xmlns:system="clr-namespace:System;assembly=mscorlib">Low Tone</system:String>
+    <system:String x:Key="Str_SoundHighTone" xmlns:system="clr-namespace:System;assembly=mscorlib">High Tone</system:String>
+    <system:String x:Key="Str_SoundRisingTone" xmlns:system="clr-namespace:System;assembly=mscorlib">Rising Tone</system:String>
+    <system:String x:Key="Str_SoundSystemExclamation" xmlns:system="clr-namespace:System;assembly=mscorlib">System Exclamation</system:String>
+    <system:String x:Key="Str_SoundSystemAsterisk" xmlns:system="clr-namespace:System;assembly=mscorlib">System Asterisk</system:String>
+    <system:String x:Key="Str_TestSound" xmlns:system="clr-namespace:System;assembly=mscorlib">Test Sound</system:String>
+
+    <system:String x:Key="Str_AlertWindowSection" xmlns:system="clr-namespace:System;assembly=mscorlib">Alert Window</system:String>
+    <system:String x:Key="Str_AlertSizeLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Window size:</system:String>
+    <system:String x:Key="Str_AlertSizeSmall" xmlns:system="clr-namespace:System;assembly=mscorlib">Small</system:String>
+    <system:String x:Key="Str_AlertSizeMedium" xmlns:system="clr-namespace:System;assembly=mscorlib">Medium</system:String>
+    <system:String x:Key="Str_AlertSizeFullScreen" xmlns:system="clr-namespace:System;assembly=mscorlib">Full Screen</system:String>
+    <system:String x:Key="Str_AlertBackgroundColor" xmlns:system="clr-namespace:System;assembly=mscorlib">Background color:</system:String>
+    <system:String x:Key="Str_AlertButtonColor" xmlns:system="clr-namespace:System;assembly=mscorlib">Button color:</system:String>
+    <system:String x:Key="Str_PreviewAlert" xmlns:system="clr-namespace:System;assembly=mscorlib">Preview</system:String>
+
+    <system:String x:Key="Str_AppearanceSection" xmlns:system="clr-namespace:System;assembly=mscorlib">Appearance</system:String>
+    <system:String x:Key="Str_ThemeLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Theme:</system:String>
+    <system:String x:Key="Str_ThemeLight" xmlns:system="clr-namespace:System;assembly=mscorlib">Light</system:String>
+    <system:String x:Key="Str_ThemeDark" xmlns:system="clr-namespace:System;assembly=mscorlib">Dark</system:String>
+    <system:String x:Key="Str_ThemeSystem" xmlns:system="clr-namespace:System;assembly=mscorlib">System</system:String>
+    <system:String x:Key="Str_LanguageLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Language:</system:String>
+
+    <system:String x:Key="Str_SaveButton" xmlns:system="clr-namespace:System;assembly=mscorlib">Save</system:String>
+    <system:String x:Key="Str_CancelButton" xmlns:system="clr-namespace:System;assembly=mscorlib">Cancel</system:String>
+
+    <!-- Alert Window -->
+    <system:String x:Key="Str_AlertTitle" xmlns:system="clr-namespace:System;assembly=mscorlib">Printer Status</system:String>
+    <system:String x:Key="Str_AlertMessage" xmlns:system="clr-namespace:System;assembly=mscorlib">Printing completed.{0}{0}You can send the next job.</system:String>
+    <system:String x:Key="Str_AlertOkButton" xmlns:system="clr-namespace:System;assembly=mscorlib">OK</system:String>
+
+    <!-- Tray Menu -->
+    <system:String x:Key="Str_TrayShowWindow" xmlns:system="clr-namespace:System;assembly=mscorlib">Show Window</system:String>
+    <system:String x:Key="Str_TrayStatus" xmlns:system="clr-namespace:System;assembly=mscorlib">Show Status</system:String>
+    <system:String x:Key="Str_TrayExit" xmlns:system="clr-namespace:System;assembly=mscorlib">Exit</system:String>
+    <system:String x:Key="Str_TrayTooltipMonitoring" xmlns:system="clr-namespace:System;assembly=mscorlib">PrintQueueWatcher: Monitoring ({0} job(s))</system:String>
+    <system:String x:Key="Str_TrayTooltipIdle" xmlns:system="clr-namespace:System;assembly=mscorlib">PrintQueueWatcher: Idle</system:String>
+    <system:String x:Key="Str_TrayBalloonTitle" xmlns:system="clr-namespace:System;assembly=mscorlib">Printing Completed</system:String>
+    <system:String x:Key="Str_TrayBalloonText" xmlns:system="clr-namespace:System;assembly=mscorlib">You can send the next job.</system:String>
+
+</ResourceDictionary>

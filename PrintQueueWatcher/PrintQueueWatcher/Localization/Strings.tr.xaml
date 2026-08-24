@@ -1,0 +1,78 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Ana Pencere -->
+    <system:String x:Key="Str_AppTitle" xmlns:system="clr-namespace:System;assembly=mscorlib">PrintQueueWatcher</system:String>
+    <system:String x:Key="Str_SelectedPrinterLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Seçili Yazıcı:</system:String>
+    <system:String x:Key="Str_NoPrinterSelected" xmlns:system="clr-namespace:System;assembly=mscorlib">Henüz yazıcı seçilmedi</system:String>
+    <system:String x:Key="Str_StartButton" xmlns:system="clr-namespace:System;assembly=mscorlib">Başlat</system:String>
+    <system:String x:Key="Str_StopButton" xmlns:system="clr-namespace:System;assembly=mscorlib">Durdur</system:String>
+    <system:String x:Key="Str_TrayHint" xmlns:system="clr-namespace:System;assembly=mscorlib">Çıkmak için simge durumundaki simgeye sağ tıklayın</system:String>
+    <system:String x:Key="Str_MinimizeToTrayHint" xmlns:system="clr-namespace:System;assembly=mscorlib">Bu pencereyi kapattığınızda, program simge durumunda çalışmaya devam eder.</system:String>
+    <system:String x:Key="Str_StartWithWindows" xmlns:system="clr-namespace:System;assembly=mscorlib">Windows ile başlat</system:String>
+    <system:String x:Key="Str_SettingsButton" xmlns:system="clr-namespace:System;assembly=mscorlib">Ayarlar</system:String>
+    <system:String x:Key="Str_StatusIdle" xmlns:system="clr-namespace:System;assembly=mscorlib">Durum: Beklemede</system:String>
+    <system:String x:Key="Str_StatusMonitoring" xmlns:system="clr-namespace:System;assembly=mscorlib">Durum: İzleniyor</system:String>
+    <system:String x:Key="Str_StatusPrinting" xmlns:system="clr-namespace:System;assembly=mscorlib">Durum: Yazdırılıyor ({0} iş)</system:String>
+    <system:String x:Key="Str_StatusQueueEmpty" xmlns:system="clr-namespace:System;assembly=mscorlib">Durum: Kuyruk boş ({0}/{1} sn)</system:String>
+    <system:String x:Key="Str_StatusError" xmlns:system="clr-namespace:System;assembly=mscorlib">Durum: Kuyruk okunamıyor</system:String>
+    <system:String x:Key="Str_SelectPrinterFirst" xmlns:system="clr-namespace:System;assembly=mscorlib">Devam etmeden önce Ayarlar'dan bir yazıcı seçin.</system:String>
+
+    <!-- Ayarlar Penceresi -->
+    <system:String x:Key="Str_SettingsTitle" xmlns:system="clr-namespace:System;assembly=mscorlib">Ayarlar</system:String>
+    <system:String x:Key="Str_PrinterSection" xmlns:system="clr-namespace:System;assembly=mscorlib">Yazıcı</system:String>
+    <system:String x:Key="Str_PrinterSelectLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">İzlenecek yazıcı:</system:String>
+    <system:String x:Key="Str_RefreshPrinters" xmlns:system="clr-namespace:System;assembly=mscorlib">Listeyi Yenile</system:String>
+
+    <system:String x:Key="Str_TimingSection" xmlns:system="clr-namespace:System;assembly=mscorlib">Zamanlama</system:String>
+    <system:String x:Key="Str_WaitSecondsLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Uyarı öncesi bekleme süresi: {0} saniye</system:String>
+    <system:String x:Key="Str_WaitSecondsHint" xmlns:system="clr-namespace:System;assembly=mscorlib">Kısa süreler, ardışık gönderilen işleri erken "tamamlandı" sayıp gereksiz uyarı verebilir; çok kısa tutmak sistemi de gereksiz yere sık kontrol ettirerek yorar. Yazıcınızın hızına göre 20-40 sn arası önerilir.</system:String>
+    <system:String x:Key="Str_CheckIntervalLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Kuyruk kontrol sıklığı: {0} saniyede bir</system:String>
+    <system:String x:Key="Str_CheckIntervalHint" xmlns:system="clr-namespace:System;assembly=mscorlib">Programın yazıcı kuyruğuna ne sıklıkla baktığıdır. Düşük değer (1-2 sn) daha hızlı tepki verir ama bilgisayarı çok az da olsa daha sık meşgul eder; eski veya düşük donanımlı bilgisayarlarda bu değeri 5 sn ve üzerine çıkarmak sistemi rahatlatır.</system:String>
+
+    <system:String x:Key="Str_NotificationSection" xmlns:system="clr-namespace:System;assembly=mscorlib">Bildirim Sesi</system:String>
+    <system:String x:Key="Str_SoundNone" xmlns:system="clr-namespace:System;assembly=mscorlib">Sessiz</system:String>
+    <system:String x:Key="Str_SoundSingleBeep" xmlns:system="clr-namespace:System;assembly=mscorlib">Tek Bip</system:String>
+    <system:String x:Key="Str_SoundDoubleBeep" xmlns:system="clr-namespace:System;assembly=mscorlib">Çift Bip</system:String>
+    <system:String x:Key="Str_SoundTripleBeep" xmlns:system="clr-namespace:System;assembly=mscorlib">Üçlü Bip</system:String>
+    <system:String x:Key="Str_SoundLowTone" xmlns:system="clr-namespace:System;assembly=mscorlib">Alçak Ton</system:String>
+    <system:String x:Key="Str_SoundHighTone" xmlns:system="clr-namespace:System;assembly=mscorlib">Yüksek Ton</system:String>
+    <system:String x:Key="Str_SoundRisingTone" xmlns:system="clr-namespace:System;assembly=mscorlib">Yükselen Ton</system:String>
+    <system:String x:Key="Str_SoundSystemExclamation" xmlns:system="clr-namespace:System;assembly=mscorlib">Sistem Uyarısı</system:String>
+    <system:String x:Key="Str_SoundSystemAsterisk" xmlns:system="clr-namespace:System;assembly=mscorlib">Sistem Bilgisi</system:String>
+    <system:String x:Key="Str_TestSound" xmlns:system="clr-namespace:System;assembly=mscorlib">Sesi Test Et</system:String>
+
+    <system:String x:Key="Str_AlertWindowSection" xmlns:system="clr-namespace:System;assembly=mscorlib">Uyarı Penceresi</system:String>
+    <system:String x:Key="Str_AlertSizeLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Pencere boyutu:</system:String>
+    <system:String x:Key="Str_AlertSizeSmall" xmlns:system="clr-namespace:System;assembly=mscorlib">Küçük</system:String>
+    <system:String x:Key="Str_AlertSizeMedium" xmlns:system="clr-namespace:System;assembly=mscorlib">Orta</system:String>
+    <system:String x:Key="Str_AlertSizeFullScreen" xmlns:system="clr-namespace:System;assembly=mscorlib">Tam Ekran</system:String>
+    <system:String x:Key="Str_AlertBackgroundColor" xmlns:system="clr-namespace:System;assembly=mscorlib">Arkaplan rengi:</system:String>
+    <system:String x:Key="Str_AlertButtonColor" xmlns:system="clr-namespace:System;assembly=mscorlib">Buton rengi:</system:String>
+    <system:String x:Key="Str_PreviewAlert" xmlns:system="clr-namespace:System;assembly=mscorlib">Önizleme</system:String>
+
+    <system:String x:Key="Str_AppearanceSection" xmlns:system="clr-namespace:System;assembly=mscorlib">Görünüm</system:String>
+    <system:String x:Key="Str_ThemeLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Tema:</system:String>
+    <system:String x:Key="Str_ThemeLight" xmlns:system="clr-namespace:System;assembly=mscorlib">Açık</system:String>
+    <system:String x:Key="Str_ThemeDark" xmlns:system="clr-namespace:System;assembly=mscorlib">Koyu</system:String>
+    <system:String x:Key="Str_ThemeSystem" xmlns:system="clr-namespace:System;assembly=mscorlib">Sistem</system:String>
+    <system:String x:Key="Str_LanguageLabel" xmlns:system="clr-namespace:System;assembly=mscorlib">Dil:</system:String>
+
+    <system:String x:Key="Str_SaveButton" xmlns:system="clr-namespace:System;assembly=mscorlib">Kaydet</system:String>
+    <system:String x:Key="Str_CancelButton" xmlns:system="clr-namespace:System;assembly=mscorlib">İptal</system:String>
+
+    <!-- Uyarı Penceresi -->
+    <system:String x:Key="Str_AlertTitle" xmlns:system="clr-namespace:System;assembly=mscorlib">Yazıcı Durumu</system:String>
+    <system:String x:Key="Str_AlertMessage" xmlns:system="clr-namespace:System;assembly=mscorlib">Yazdırma tamamlandı.{0}{0}Yeni işi gönderebilirsiniz.</system:String>
+    <system:String x:Key="Str_AlertOkButton" xmlns:system="clr-namespace:System;assembly=mscorlib">Tamam</system:String>
+
+    <!-- Tepsi Menüsü -->
+    <system:String x:Key="Str_TrayShowWindow" xmlns:system="clr-namespace:System;assembly=mscorlib">Pencereyi Göster</system:String>
+    <system:String x:Key="Str_TrayStatus" xmlns:system="clr-namespace:System;assembly=mscorlib">Durumu Göster</system:String>
+    <system:String x:Key="Str_TrayExit" xmlns:system="clr-namespace:System;assembly=mscorlib">Çıkış</system:String>
+    <system:String x:Key="Str_TrayTooltipMonitoring" xmlns:system="clr-namespace:System;assembly=mscorlib">PrintQueueWatcher: İzleniyor ({0} iş)</system:String>
+    <system:String x:Key="Str_TrayTooltipIdle" xmlns:system="clr-namespace:System;assembly=mscorlib">PrintQueueWatcher: Beklemede</system:String>
+    <system:String x:Key="Str_TrayBalloonTitle" xmlns:system="clr-namespace:System;assembly=mscorlib">Yazdırma Tamamlandı</system:String>
+    <system:String x:Key="Str_TrayBalloonText" xmlns:system="clr-namespace:System;assembly=mscorlib">Yeni işi gönderebilirsiniz.</system:String>
+
+</ResourceDictionary>
